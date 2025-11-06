@@ -1,0 +1,23 @@
+GET http://localhost:5173/api
+
+###
+
+POST http://localhost:5173/api
+Content-Type: application/json
+
+{
+    "message":"Welcome 🤑"
+}
+
+###
+
+PUT http://localhost:5173/api?id=2
+Content-Type: application/json
+
+{
+    "message":"Welcome ✅"
+}
+
+###
+
+DELETE http://localhost:5173/api?id=2
