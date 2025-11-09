@@ -1,0 +1,14 @@
+{
+	"source": {
+		"include": ["src/lib", "src/routes"],
+		"includePattern": ".+\\.(js|ts|svelte)$",
+		"excludePattern": "(^|\\/|\\\\)_"
+	},
+	"opts": {
+		"encoding": "utf8",
+		"destination": "./docs",
+		"recurse": true,
+		"verbose": true,
+		"template": "templates/default"
+	}
+}

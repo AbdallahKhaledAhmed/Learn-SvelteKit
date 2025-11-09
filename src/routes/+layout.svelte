@@ -1,7 +1,7 @@
 <script>
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import Nav from '../components/Nav.svelte';
+	import Nav from '$lib/components/Nav.svelte';
 
 	let { children } = $props();
 </script>
@@ -10,5 +10,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<Nav />
-{@render children()}
+<div style:display="flex" style="display: flex; gap: 2rem;">
+	<aside><Nav /></aside>
+	{@render children()}
+</div>
