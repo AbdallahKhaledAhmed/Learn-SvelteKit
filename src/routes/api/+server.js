@@ -26,3 +26,4 @@ export const DELETE = async (req) => {
 	data.splice(id, 1);
 	return json(data);
 };
+
